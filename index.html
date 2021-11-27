@@ -55,15 +55,6 @@
     var dayOfWeek = weekday[today.getDay()];
     var date = `${dayOfWeek}, ${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
 
-    var greet;
-
-    if (hrs < 12)
-        greet = 'Good Morning, Brook.  ';
-    else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon, Brook. ';
-    else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening, Brook.  ';
-
     document.getElementById('lbl').innerHTML = `
         <div class="container">
           <div id="date"> ${date}</div>
